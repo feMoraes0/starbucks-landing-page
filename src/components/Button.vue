@@ -19,8 +19,8 @@ export default {
     border: none;
     border-radius: 36px;
     color: #FFFFFF;
-    font-size: 1.2rem;
-    line-height: 1.2rem;
-    padding: 12px 24px;
+    font-size: 1.1rem;
+    line-height: 1.1rem;
+    padding: 12px 21px;
   }
 </style>

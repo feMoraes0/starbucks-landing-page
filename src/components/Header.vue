@@ -37,7 +37,7 @@ export default {
 
   img {
     width: 82px;
-    height: 82px;
+    margin-bottom: 6px;
   }
 
   li a {
@@ -45,10 +45,10 @@ export default {
   }
 
   li {
-    border: 1px solid white;
     display: inline;
+    font-size: 1rem;
     font-weight: 400;
-    margin-right: 40px;
+    margin-right: 41px;
   }
 
   li:last-child {

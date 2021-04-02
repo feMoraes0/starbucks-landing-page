@@ -11,7 +11,6 @@
         Nunc vel lobortis ex.
         Integer quis tortor aliquam, convallis orci eget, ultrices massa.
         Maecenas vestibulum dui at nibh ornare, vel commodo ipsum vestibulum.
-        Cras eget ipsum a ipsum suscipit porta ut id ligula.
       </p>
       <Button content="Learn More" />
     </section>
@@ -54,27 +53,31 @@ export default {
 
   .text h2 {
     color: #453D39;
-    font-size: 4.8rem;
+    font-size: 4rem;
     font-weight: 400;
-    line-height: 5.5rem;
+    letter-spacing: 0.4px;
+    line-height: 5.4rem;
   }
 
   .text h2 strong {
     color: #266E3F;
+    font-size: 5rem;
     font-weight: 700;
+    letter-spacing: -3.5px;
   }
 
   .text p {
     color: #453D39;
-    font-size: 1.25rem;
+    font-size: 1rem;
     margin-bottom: 20px;
-    margin-top: 10px;
+    margin-top: 3px;
     width: 36.6vw;
   }
 
   .product img {
     align-self: flex-end;
     margin-right: 9vw;
-    width: 26vw;
+    margin-top: 5vh;
+    width: 26.4vw;
   }
 </style>

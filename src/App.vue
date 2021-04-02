@@ -41,9 +41,9 @@ export default {
 
   .background {
     background-color: #266E3F;
-    border-top-left-radius: 100%;
+    border-top-left-radius: 99%;
     bottom: 0;
-    height: 75.9vh;
+    height: 75.8vh;
     position: absolute;
     right: 0;
     width: 38.66vw;

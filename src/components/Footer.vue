@@ -17,16 +17,22 @@ export default {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-bottom: 26px;
+    margin-bottom: 35px;
     width: 100%;
   }
 
   img {
     cursor: pointer;
-    margin-right: 33px;
+    width: 57px;
+    margin-top: -8px;
+  }
+
+  img:first-child {
+    margin-right: 45px;
   }
 
   img:last-child {
-    margin-right: 0;
+    margin-left: 42px;
+    margin-right: -15px;
   }
 </style>
