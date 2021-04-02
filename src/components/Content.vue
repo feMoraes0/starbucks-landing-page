@@ -15,7 +15,7 @@
       <Button content="Learn More" />
     </section>
     <section class="product">
-      <img src="../assets/products/img1.png" alt="Product">
+      <img :src="imageSource()" alt="Product">
     </section>
   </section>
 </template>
@@ -27,6 +27,14 @@ export default {
   name: "Content",
   components: {
     Button,
+  },
+  props: {
+    image: String
+  },
+  methods: {
+    imageSource() {
+      return require(`@/assets/products/${this.image}`);
+    }
   }
 }
 </script>

@@ -1,14 +1,19 @@
 <template lang="html">
   <footer>
-    <img src="../assets/thumbs/thumb1.png" alt="">
-    <img src="../assets/thumbs/thumb2.png" alt="">
-    <img src="../assets/thumbs/thumb3.png" alt="">
+    <img @click="updateProduct(1)" src="../assets/thumbs/thumb1.png" alt="">
+    <img @click="updateProduct(2)" src="../assets/thumbs/thumb2.png" alt="">
+    <img @click="updateProduct(3)" src="../assets/thumbs/thumb3.png" alt="">
   </footer>
 </template>
 
 <script>
 export default {
-  name: "Footer"
+  name: "Footer",
+  methods: {
+    updateProduct(value) {
+      this.$emit("updateProductNumber", value);
+    }
+  }
 }
 </script>
 

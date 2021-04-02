@@ -2,8 +2,8 @@
   <div class="background" />
   <div class="foreground">
     <Header />
-    <Content />
-    <Footer />
+    <Content :image="`img${getProductNumber()}.png`" />
+    <Footer @updateProductNumber="updateProductNumber" />
   </div>
 </template>
 
@@ -19,6 +19,20 @@ export default {
     Content,
     Footer,
     Header,
+  },
+  data() {
+    return {
+      productNumber: 1,
+    }
+  },
+  methods: {
+    getProductNumber() {
+      return (this.productNumber < 1 || this.productNumber > 3) ? 1 : this.productNumber;
+    },
+
+    updateProductNumber(newProductNumber) {
+      this.productNumber = (newProductNumber < 1 || newProductNumber > 3) ? 1 : newProductNumber;
+    }
   }
 }
 </script>
