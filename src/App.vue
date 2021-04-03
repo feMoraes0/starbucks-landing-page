@@ -2,7 +2,7 @@
   <div class="background" />
   <div class="foreground">
     <Header />
-    <Content :image="`img${getProductNumber()}.png`" />
+    <Content :selectedImage="`img${getProductNumber()}.png`" />
     <Footer @updateProductNumber="updateProductNumber" />
   </div>
 </template>

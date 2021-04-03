@@ -4,9 +4,9 @@
         name="fade"
         mode="out-in"
       >
-        <img v-if="image === 'img1.png'" :src="require('@/assets/products/img1.png')" alt="Product1" key="img1">
-        <img v-else-if="image === 'img2.png'" :src="require('@/assets/products/img2.png')" alt="Product2" key="img2">
-        <img v-else-if="image === 'img3.png'" :src="require('@/assets/products/img3.png')" alt="Product3" key="img3">
+        <img v-if="currentImage === 'img1.png'" :src="require('@/assets/products/img1.png')" alt="Product1" key="img1">
+        <img v-else-if="currentImage === 'img2.png'" :src="require('@/assets/products/img2.png')" alt="Product2" key="img2">
+        <img v-else-if="currentImage === 'img3.png'" :src="require('@/assets/products/img3.png')" alt="Product3" key="img3">
       </transition>
   </section>
 </template>
@@ -15,7 +15,7 @@
   export default {
     name: "ProductBox",
     props: {
-      image: String
+      currentImage: String
     }
   }
 </script>

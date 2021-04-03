@@ -14,7 +14,7 @@
       </p>
       <Button content="Learn More" />
     </section>
-    <ProductBox :image="image" />
+    <ProductBox :currentImage="selectedImage" />
   </section>
 </template>
 
@@ -29,7 +29,7 @@
       ProductBox,
     },
     props: {
-      image: String
+      selectedImage: String
     }
   }
 </script>
