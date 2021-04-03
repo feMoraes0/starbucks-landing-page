@@ -2,7 +2,7 @@
   <div class="background" />
   <div class="foreground">
     <Header />
-    <Content :selectedImage="`img${getProductNumber()}.png`" />
+    <Content :selectedImage="getSelectedProductImage()" />
     <Footer @updateProductNumber="updateProductNumber" />
   </div>
 </template>
@@ -26,8 +26,9 @@ export default {
     }
   },
   methods: {
-    getProductNumber() {
-      return (this.productNumber < 1 || this.productNumber > 3) ? 1 : this.productNumber;
+    getSelectedProductImage() {
+      const productNumber = (this.productNumber < 1 || this.productNumber > 3) ? 1 : this.productNumber;
+      return `img${productNumber}.png`;
     },
 
     updateProductNumber(newProductNumber) {
