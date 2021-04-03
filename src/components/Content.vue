@@ -15,31 +15,51 @@
       <Button content="Learn More" />
     </section>
     <section class="product">
-      <img :src="imageSource()" alt="Product">
+        <transition
+          name="fade"
+          mode="out-in"
+        >
+          <img v-if="image === 'img1.png'" :src="require('@/assets/products/img1.png')" alt="Product1" key="img1">
+          <img v-else-if="image === 'img2.png'" :src="require('@/assets/products/img2.png')" alt="Product2" key="img2">
+          <img v-else-if="image === 'img3.png'" :src="require('@/assets/products/img3.png')" alt="Product3" key="img3">
+        </transition>
     </section>
   </section>
 </template>
 
 <script>
-import Button from "./Button.vue";
+  import Button from "./Button.vue";
 
-export default {
-  name: "Content",
-  components: {
-    Button,
-  },
-  props: {
-    image: String
-  },
-  methods: {
-    imageSource() {
-      return require(`@/assets/products/${this.image}`);
+  export default {
+    name: "Content",
+    components: {
+      Button,
+    },
+    props: {
+      image: String
+    },
+    methods: {
+      imageSource() {
+        return require(`@/assets/products/${this.image}`);
+      },
     }
   }
-}
 </script>
 
 <style lang="css" scoped>
+  .fade-enter-to, .fade-leave-from {
+    transform: scale(1.0);
+    opacity: 1;
+    transition: transform, opacity 0.5s ease;
+
+  }
+
+  .fade-enter-from, .fade-leave-to {
+    transform: scale(0.3);
+    opacity: 0;
+    transition: transform, opacity 0.5s ease;
+  }
+
   .content {
     align-items: center;
     display: flex;
