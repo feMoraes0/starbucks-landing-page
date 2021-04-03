@@ -8,7 +8,14 @@
 export default {
   name: "Button",
   props: {
-    content: String
+    content: String,
+    backgroundColour: String,
+  },
+  watch: {
+    backgroundColour() {
+      const el = document.querySelector("button");
+      el.style.backgroundColor = this.backgroundColour;
+    }
   }
 }
 </script>
@@ -22,5 +29,6 @@ export default {
     font-size: 1.1rem;
     line-height: 1.1rem;
     padding: 12px 21px;
+    transition: background-color 1.5s ease;
   }
 </style>

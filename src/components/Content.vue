@@ -4,7 +4,7 @@
       <h2>
         It's not just Coffee
         <br/>
-        It's <strong>Starbucks</strong>
+        It's <strong id="brand-name">Starbucks</strong>
       </h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -12,7 +12,7 @@
         Integer quis tortor aliquam, convallis orci eget, ultrices massa.
         Maecenas vestibulum dui at nibh ornare, vel commodo ipsum vestibulum.
       </p>
-      <Button content="Learn More" />
+      <Button content="Learn More" :backgroundColour="productColour" />
     </section>
     <ProductBox :currentImage="selectedImage" />
   </section>
@@ -29,7 +29,14 @@
       ProductBox,
     },
     props: {
-      selectedImage: String
+      selectedImage: String,
+      productColour: String
+    },
+    watch: {
+      productColour() {
+        const el = document.querySelector("#brand-name");
+        el.style.color = this.productColour;
+      }
     }
   }
 </script>
@@ -63,10 +70,11 @@
   }
 
   .text h2 strong {
-    color: #266E3F;
+    /* color: #266E3F; */
     font-size: 5rem;
     font-weight: 700;
     letter-spacing: -3.5px;
+    transition: color 1.5s ease;
   }
 
   .text p {

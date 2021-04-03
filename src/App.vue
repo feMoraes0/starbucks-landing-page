@@ -2,7 +2,7 @@
   <div class="background" />
   <div class="foreground">
     <Header />
-    <Content :selectedImage="getSelectedProductImage()" />
+    <Content :selectedImage="getSelectedProductImage()" :productColour="getCurrentProductColour()" />
     <Footer @updateProductNumber="updateProductNumber" />
   </div>
 </template>
@@ -23,6 +23,17 @@ export default {
   data() {
     return {
       productNumber: 1,
+      backgroundColour: [
+        "#266E3F",
+        "#EAB1BE",
+        "#E54D87"
+      ]
+    }
+  },
+  watch: {
+    productNumber() {
+      const el = document.querySelector(".background");
+      el.style.backgroundColor = this.getCurrentProductColour();
     }
   },
   methods: {
@@ -33,6 +44,10 @@ export default {
 
     updateProductNumber(newProductNumber) {
       this.productNumber = (newProductNumber < 1 || newProductNumber > 3) ? 1 : newProductNumber;
+    },
+
+    getCurrentProductColour() {
+      return this.backgroundColour[this.productNumber - 1];
     }
   }
 }
@@ -63,6 +78,7 @@ export default {
     right: 0;
     width: 38.66vw;
     z-index: -1;
+    transition: background-color 1.5s ease;
   }
 
   .foreground {
