@@ -50,14 +50,17 @@
   .fade-enter-to, .fade-leave-from {
     transform: scale(1.0);
     opacity: 1;
-    transition: transform, opacity 0.5s ease;
-
+    transition-property: transform, opacity;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
   }
 
   .fade-enter-from, .fade-leave-to {
     transform: scale(0.3);
     opacity: 0;
-    transition: transform, opacity 0.5s ease;
+    transition-property: transform, opacity;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
   }
 
   .content {
