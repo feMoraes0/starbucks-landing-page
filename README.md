@@ -7,7 +7,9 @@
 <p align="center">
   <img width="400" src="https://raw.githubusercontent.com/feMoraes0/project-prints/master/starbucks-landing-page/print-003.png">
 </p>
-[![Project Video](https://raw.githubusercontent.com/feMoraes0/project-prints/master/starbucks-landing-page/print-001.png)](https://www.youtube.com/watch?v=KCorC8QKyN8)
+
+## :video_camera: Video
+ - <a href="https://www.youtube.com/watch?v=KCorC8QKyN8">Youtube Video</a>
 
 ## :paperclip: Useful Links
  - [Vue 3 Animations & Transitions Tutorial by The Net Ninja](https://www.youtube.com/playlist?list=PL4cUxeGkcC9ghm7-iTfS9n468Kp7l9Ipu)
