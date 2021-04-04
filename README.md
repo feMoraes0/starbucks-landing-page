@@ -9,10 +9,10 @@
 </p>
 
 ## :video_camera: Video
- - <a href="https://www.youtube.com/watch?v=KCorC8QKyN8">Youtube Video</a>
+ - <a target="_blank" href="https://www.youtube.com/watch?v=KCorC8QKyN8">Youtube Video</a>
 
 ## :paperclip: Useful Links
- - [Vue 3 Animations & Transitions Tutorial by The Net Ninja](https://www.youtube.com/playlist?list=PL4cUxeGkcC9ghm7-iTfS9n468Kp7l9Ipu)
+ - <a target="_blank" href="https://v3.vuejs.org/guide/transitions-enterleave.html#transitioning-between-components">Transitions and Animations - VueJS3 Docs</a>
 
 ## :book: How to use
 
