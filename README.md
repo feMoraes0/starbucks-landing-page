@@ -1,7 +1,12 @@
 <h1 align="center">Starbucks Landing Page</h1>
 
 <p align="center">
-  <img width="500" src="https://raw.githubusercontent.com/feMoraes0/project-prints/master/starbucks-landing-page/print-001.png">
+  <img width="400" src="https://raw.githubusercontent.com/feMoraes0/project-prints/master/starbucks-landing-page/print-001.png">
+  <img width="400" src="https://raw.githubusercontent.com/feMoraes0/project-prints/master/starbucks-landing-page/print-002.png">
+</p>
+<p align="center">
+  <img width="400" src="https://raw.githubusercontent.com/feMoraes0/project-prints/master/starbucks-landing-page/print-003.png">
+  [![Watch the video](https://raw.githubusercontent.com/feMoraes0/project-prints/master/starbucks-landing-page/print-001.png)](https://www.youtube.com/watch?v=KCorC8QKyN8)
 </p>
 
 ## :paperclip: Useful Links
