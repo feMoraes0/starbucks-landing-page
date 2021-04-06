@@ -1,4 +1,4 @@
-<template lang="html">
+<template>
   <section class="content">
     <section class="text">
       <h2>

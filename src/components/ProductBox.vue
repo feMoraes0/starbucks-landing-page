@@ -1,4 +1,4 @@
-<template lang="html">
+<template>
   <section>
       <transition
         name="fade"

@@ -1,4 +1,4 @@
-<template lang="html">
+<template>
   <header>
     <img src="../assets/logo.png" alt="Starbucks Logo">
     <ul>

@@ -1,23 +1,23 @@
-<template lang="html">
+<template>
   <button type="button" name="button">
     {{content}}
   </button>
 </template>
 
 <script>
-export default {
-  name: "Button",
-  props: {
-    content: String,
-    backgroundColour: String,
-  },
-  watch: {
-    backgroundColour() {
-      const el = document.querySelector("button");
-      el.style.backgroundColor = this.backgroundColour;
+  export default {
+    name: "Button",
+    props: {
+      content: String,
+      backgroundColour: String,
+    },
+    watch: {
+      backgroundColour() {
+        const el = document.querySelector("button");
+        el.style.backgroundColor = this.backgroundColour;
+      }
     }
   }
-}
 </script>
 
 <style lang="css" scoped>

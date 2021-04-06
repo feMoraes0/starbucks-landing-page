@@ -1,4 +1,4 @@
-<template lang="html">
+<template>
   <footer>
     <img @click="updateProduct(1)" src="../assets/thumbs/thumb1.png" alt="">
     <img @click="updateProduct(2)" src="../assets/thumbs/thumb2.png" alt="">
