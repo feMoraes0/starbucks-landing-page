@@ -9,11 +9,6 @@ describe("Button component", () => {
     }
   });
 
-  it("should initialize button component correctly", () => {
-    // THEN
-    expect(wrapper.find("button").exists()).toBe(true);
-  });
-
   it("should validate received properties", () => {
     // THEN
     expect(wrapper.props().content).toEqual("any_content");

@@ -4,11 +4,6 @@ import Footer from "@/src/components/Footer.vue";
 describe("Footer component", () => {
   const wrapper = shallowMount(Footer);
 
-  it("should validate component main tag", () => {
-    // THEN
-    expect(wrapper.find("footer").exists()).toBeTruthy();
-  });
-
   it("should trigger a parent function via emit function", async () => {
     // WHEN
     wrapper.vm.updateProduct("any_product");
