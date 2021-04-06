@@ -5,6 +5,9 @@ module.exports = {
     "json",
     "vue"
   ],
+  collectCoverageFrom:[
+    "src/**/*.vue",
+  ],
   moduleNameMapper: {
     "^@/(.*)$": "<rootDir>/$1",
     "^~/(.*)$": "<rootDir>/$1"
