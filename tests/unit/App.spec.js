@@ -25,6 +25,24 @@ describe("App component", () => {
     // WHEN
     const returnedColour = wrapper.vm.getCurrentProductColour();
     // THEN
+    expect(returnedColour).toEqual("colour_2");
+  });
+
+  it("should validate getCurrentProductColour return when productColour value is less than zero", async () => {
+    // GIVEN
+    await wrapper.setData({productNumber: 0});
+    // WHEN
+    const returnedColour = wrapper.vm.getCurrentProductColour();
+    // THEN
+    expect(returnedColour).toEqual("colour_1");
+  });
+
+  it("should validate getCurrentProductColour return when productColour value is greater than backgroundColour length", async () => {
+    // GIVEN
+    await wrapper.setData({productNumber: 4});
+    // WHEN
+    const returnedColour = wrapper.vm.getCurrentProductColour();
+    // THEN
     expect(returnedColour).toEqual("colour_1");
   });
 
