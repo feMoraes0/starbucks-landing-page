@@ -38,16 +38,20 @@ export default {
   },
   methods: {
     getSelectedProductImage() {
-      const productNumber = (this.productNumber < 1 || this.productNumber > 3) ? 1 : this.productNumber;
+      const productNumber = (this.productNumber < 1 || this.productNumber > this.backgroundColour.length) ? 1 : this.productNumber;
       return `img${productNumber}.png`;
     },
 
     updateProductNumber(newProductNumber) {
-      this.productNumber = (newProductNumber < 1 || newProductNumber > 3) ? 1 : newProductNumber;
+      this.productNumber = (newProductNumber < 1 || newProductNumber > this.backgroundColour.length) ? 1 : newProductNumber;
     },
 
     getCurrentProductColour() {
-      return this.backgroundColour[this.productNumber - 1];
+      let backgroundImageNumber = 0;
+      if(this.productNumber > 0 && this.productNumber <= this.backgroundColour.length) {
+        backgroundImageNumber = this.productNumber;
+      }
+      return this.backgroundColour[backgroundImageNumber];
     }
   }
 }
