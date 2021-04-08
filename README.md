@@ -11,6 +11,12 @@
 ## :video_camera: Video
  - <a target="_blank" href="https://www.youtube.com/watch?v=KCorC8QKyN8">Youtube Video</a>
 
+## :rocket: Knowledges
+ - `VueJS 3`
+ - `Vue Animations`: applied with vuejs transition tag and css classes.
+ - `Unit test`: applied with jest implementation for VueJS called vue-jest.
+
+
 ## :paperclip: Useful Links
  - <a target="_blank" href="https://v3.vuejs.org/guide/transitions-enterleave.html#transitioning-between-components">Transitions and Animations - VueJS3 Docs</a>
 
