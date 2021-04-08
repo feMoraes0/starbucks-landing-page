@@ -15,10 +15,12 @@
  - `VueJS 3`
  - `Vue Animations`: applied with vuejs transition tag and css classes.
  - `Unit test`: applied with jest implementation for VueJS called vue-jest.
+ - `Conventional Commits`: currently newbie on it, but applying to learn.
 
 
 ## :paperclip: Useful Links
  - <a target="_blank" href="https://v3.vuejs.org/guide/transitions-enterleave.html#transitioning-between-components">Transitions and Animations - VueJS3 Docs</a>
+ - <a target="_blank" href="https://vue-test-utils.vuejs.org/">Unit Test - Vue Test Utils Docs</a>
 
 ## :book: How to use
 
