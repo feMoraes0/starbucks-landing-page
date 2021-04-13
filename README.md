@@ -6,6 +6,7 @@
 </p>
 <p align="center">
   <img width="400" src="https://raw.githubusercontent.com/feMoraes0/project-prints/master/starbucks-landing-page/print-003.png">
+  <img width="400" src="https://raw.githubusercontent.com/feMoraes0/project-prints/master/starbucks-landing-page/print-004.png">
 </p>
 
 ## :video_camera: Video
@@ -38,6 +39,9 @@ $ npm install
 
 # Run the project
 $ npm run serve
+
+# Run the unit tests
+$ npm run test:unit
 ```
 
 ## :mailbox: Contact
